@@ -3,6 +3,7 @@ import mealsImage from '../../assets/meals.jpg';
 import classes from './Header.module.css';
 import HeaderCartButton from "./HeaderCartButton";
 import MealsSummary from "../Meals/MealsSummary";
+import Meals from "../Meals/Meals";
 const Header=()=>{
 
     return <Fragment>
@@ -13,7 +14,7 @@ const Header=()=>{
         <div className={classes['main-image']}>
             <img src={mealsImage} alt="HeaderImage" />
         </div>
-        <MealsSummary></MealsSummary>
+        <Meals></Meals>
     </Fragment>
 }
 export default Header;
